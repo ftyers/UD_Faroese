@@ -1,0 +1,13 @@
+"<Hettar>"
+	"hesin" Pron Dem Neu Sg Nom @nsubj #1->5
+"<er>"
+	"vera" V Ind Prs Sg3 @cop #2->5
+"<ein>"
+	"ein" Det Msc Sg Nom @det #3->5
+"<royndar>"
+	"royndur" A Fem Pl Nom Indef @amod #4->5
+"<setningur>"
+	"setningur" N Msc Sg Nom Indef @root #5->0
+"<.>"
+	"." CLB @punct #6->5
+
