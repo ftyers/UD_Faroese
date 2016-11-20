@@ -29,22 +29,22 @@
 	"." CLB @punct #3->2
 
 "<Í>"
-	"í" Pr @case #1->2
+	"í" Pr @case #1->1
 "<1957>"
 	"1957" Num Dat @nmod #2->6
 "<verður>"
 	"verða" V Ind Prs Sg3 @aux #3->6
 "<Útvarp>"
-	"útvarp" N Neu Sg Nom Indef @nsubj #4->6
+	"útvarp" N Neu Sg Nom Indef @dep #4->6
 "<Føroya>"
-	"Føroyar" N Prop Fem Pl Gen Indef @flat #5->4
+	"Føroyar" N Prop Fem Pl Gen Indef @dep #5->4
 "<stovnað>"
 	"stovna" V Sup @root #6->0
 "<.>"
 	"." CLB @punct #7->6
 
 "<Hetta>"
-	"hesin" Pron Dem Neu Sg Acc @nsubj:cop #1->5
+	"hesin" Pron Dem Neu Sg Nom @nsubj:cop #1->5
 "<var>"
 	"vera" V Ind Prt Sg3 @cop #2->5
 "<ein>"
@@ -52,7 +52,7 @@
 "<lítil>"
 	"lítil" A Msc Sg Nom Indef @amod #4->5
 "<meiriluti>"
-	"meiriluti" N Msc Sg Nom Indef @acl:relcl #5->10
+	"meiriluti" N Msc Sg Nom Indef @root #5->5
 "<,>"
 	"," CLB @punct #6->5
 "<sum>"
@@ -62,15 +62,15 @@
 "<at>"
 	"at" IM @mark #9->10
 "<merkja>"
-	"merkja" V Inf @root #10->0
+	"merkja" V Inf @acl:relcl #10->5
 "<samstarvið>"
-	"samstarv" N Neu Sg Acc Def @obj #11->10
+	"samstarv" N Neu Sg Acc Def @obj:dir #11->10
 "<ímillum>"
 	"ímillum" Pr @case #12->13
 "<flokkarnar>"
 	"flokkur" N Msc Pl Acc Def @nmod #13->11
 "<.>"
-	"." CLB @punct #14->10
+	"." CLB @punct #14->5
 
 "<Frálæra>"
 	"frálæra" N Fem Sg Nom Indef @nsubj #1->2
@@ -81,7 +81,7 @@
 "<fólkaskúlanum>"
 	"fólkaskúli" N Msc Sg Dat Def @nmod #4->2
 "<ella>"
-	"ella" CC @cc #5->7
+	"ella" CC @cc #5->4
 "<á>"
 	"á" Pr @case #6->7
 "<frískúla>"
@@ -92,55 +92,53 @@
 "<Í>"
 	"í" Pr @case #1->2
 "<frískúlum>"
-	"frískúli" N Msc Pl Dat Indef @nmod #2->5
-"</>"
-	"/" @cc #3->2
+	"frískúli" N Msc Pl Dat Indef @nmod #2->2
 "<privatskúlum>"
-	"privatskúli" N Msc Pl Dat Indef @conj #4->2
+	"privatskúli" N Msc Pl Dat Indef @dep #3->4
 "<fæst>"
-	"fáa" V Ind Prs Sg3 Pass @root #5->0
+	"fáa" V Ind Prs Sg3 Pass @root #4->0
 "<frálæra>"
-	"frálæra" N Fem Sg Nom Indef @nsubj #6->5
+	"frálæra" N Fem Sg Nom Indef @dep #5->4
 "<,>"
-	"," CLB @punct #7->5
+	"," CLB @punct #6->6
 "<á>"
-	"á" Pr @case #8->10
+	"á" Pr @case #7->7
 "<sama>"
-	"samur" A Msc Sg Acc Def @amod #9->10
+	"samur" A Msc Sg Acc Def @amod #8->9
 "<hátt>"
-	"háttur" N Msc Sg Acc Indef @acl:recl #10->5
+	"háttur" N Msc Sg Acc Indef @nmod #9->9
 "<sum>"
-	"sum" Pr @mark #11->13
+	"sum" Pr @case #10->10
 "<í>"
-	"í" Pr @case #12->13
+	"í" Pr @case #11->12
 "<fólkaskúlanum>"
-	"fólkaskúli" N Msc Sg Dat Def @nmod #13->10
+	"fólkaskúli" N Msc Sg Dat Def @nmod #12->12
 "<.>"
-	"." CLB @punct #14->5
+	"." CLB @punct #13->13
 
 "<Einans>"
-	"einans" Adv @advmod #1->2
+	"einans" Adv @dep #1->5
 "<seyður>"
-	"seyður" N Msc Sg Nom Indef @nsubj #2->5
+	"seyður" N Msc Sg Nom Indef @dep #2->5
 "<og>"
-	"og" CC @cc #3->2
+	"og" CC @cc #3->3
 "<fuglur>"
-	"fuglur" N Msc Sg Nom Indef @conj #4->2
+	"fuglur" N Msc Sg Nom Indef @dep #4->5
 "<býr>"
 	"búgva" V Ind Prs Sg3 @root #5->0
 "<á>"
 	"á" Pr @case #6->7
 "<oynni>"
-	"oy" N Fem Sg Dat Def @nmod #7->5
+	"oy" N Fem Sg Dat Def @nmod #7->7
 "<.>"
-	"." CLB @punct #8->5
+	"." CLB @punct #8->8
 
 "<Sjógvurin>"
 	"sjógvur" N Msc Sg Nom Def @nsubj #1->2
 "<frystir>"
 	"frysta" V Ind Prs Sg3 @root #2->0
 "<ongantíð>"
-	"ongantíð" Adv @advmod #3->2
+	"ongantíð" Adv @dep #3->2
 "<.>"
 	"." CLB @punct #4->2
 
@@ -151,7 +149,7 @@
 "<vóru>"
 	"vera" V Ind Prt Pl @cop #3->5
 "<tølini>"
-	"tal" N Neu Pl Nom Def @nsubj:cop #4->5
+	"tal" N Neu Pl Nom Def @nsubj #4->5
 "<73 %>"
 	"73 %" Num Nom @root #5->0
 "<av>"
@@ -159,7 +157,7 @@
 "<mannfólkunum>"
 	"mannfólk" N Neu Pl Dat Def @nmod #7->5
 "<og>"
-	"og" CC @cc #8->9
+	"og" CC @cc #8->5
 "<74 %>"
 	"74 %" Num Nom @conj #9->5
 "<av>"
@@ -170,228 +168,227 @@
 	"." CLB @punct #12->5
 
 "<Hon>"
-	"hon" Pron Pers Sg3 Fem Nom @nsubj:cop #1->5
+	"hon" Pron Pers Sg3 Fem Nom @nsubj #1->1
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #2->5
+	"vera" V Ind Prs Sg3 @cop #2->2
 "<eisini>"
-	"eisini" Adv @advmod #3->2
+	"eisini" Adv @dep #3->3
 "<størsta>"
 	"stórur" A Superl Fem Sg Nom Def @amod #4->5
 "<fiskivinnuhavnin>"
-	"fiskivinna#havn" N Fem Sg Nom Def @root #5->0
+	"fiskivinna#havn" N Fem Sg Nom Def @dep #5->5
 "<í>"
 	"í" Pr @case #6->7
 "<landinum>"
-	"land" N Neu Sg Dat Def @nmod #7->5
+	"land" N Neu Sg Dat Def @nmod #7->7
 "<.>"
-	"." CLB @punct #8->5
+	"." CLB @punct #8->8
 
 "<Forsíða>"
-	"forsíða" N Fem Sg Nom Indef @root #1->0
+	"forsíða" N Fem Sg Nom Indef @dep #1->1
 "<:>"
-	":" CLB @punct #2->1
+	":" CLB @punct #2->2
 "<Løgmenn>"
-	"løgmaður" N Msc Pl Nom Indef @parataxis #3->1
+	"løgmaður" N Msc Pl Nom Indef @dep #3->3
 "<í>"
 	"í" Pr @case #4->5
 "<Føroyum>"
-	"Føroyar" N Prop Fem Pl Dat Indef @nmod #5->3
+	"Føroyar" N Prop Fem Pl Dat Indef @nmod #5->5
 "<:>"
-	":" CLB @punct #6->3
+	":" CLB @punct #6->6
 "<Hetta>"
-	"hesin" Pron Dem Neu Sg Acc @nsubj:cop #7->10
+	"hesin" Pron Dem Neu Sg Acc @dep #7->7
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #8->10
+	"vera" V Ind Prs Sg3 @cop #8->8
 "<ein>"
 	"ein" Det Msc Sg Nom @det #9->10
 "<listi>"
-	"listi" N Msc Sg Nom Indef @parataxis #10->1
+	"listi" N Msc Sg Nom Indef @dep #10->10
 "<av>"
 	"av" Pr @case #11->12
 "<Løgmonnum>"
-	"løgmaður" N Msc Pl Dat Indef @nmod #12->10
+	"løgmaður" N Msc Pl Dat Indef @nmod #12->12
 "<í>"
 	"í" Pr @case #13->14
 "<Føroyum>"
-	"Føroyar" N Prop Fem Pl Dat Indef @nmod #14->10
+	"Føroyar" N Prop Fem Pl Dat Indef @nmod #14->14
 "<.>"
-	"." CLB @punct #15->10
+	"." CLB @punct #15->15
 
 "<Størsti>"
 	"stórur" A Superl Msc Sg Nom Def @amod #1->2
 "<býurin>"
-	"býur" N Msc Sg Nom Def @nsubj:cop #2->6
+	"býur" N Msc Sg Nom Def @dep #2->2
 "<og>"
-	"og" CC @cc #3->4
+	"og" CC @cc #3->3
 "<høvuðsstaðurin>"
-	"høvuðsstaður" N Msc Sg Nom Def @conj #4->2
+	"høvuðsstaður" N Msc Sg Nom Def @dep #4->4
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #5->6
+	"vera" V Ind Prs Sg3 @cop #5->5
 "<Keypmannahavn>"
-	"Keypmannahavn" N Prop Fem Sg Nom Indef @root #6->0
+	"Keypmannahavn" N Prop Fem Sg Nom Indef @dep #6->6
 "<.>"
-	"." CLB @punct #7->6
+	"." CLB @punct #7->7
 
 "<Føroyar>"
-	"Føroyar" N Prop Fem Pl Nom Indef @nsubj:cop #1->6
+	"Føroyar" N Prop Fem Pl Nom Indef @dep #1->1
 "<og>"
-	"og" CC @cc #2->3
+	"og" CC @cc #2->2
 "<Grønland>"
-	"Grønland" N Prop Neu Sg Nom Indef @conj #3->1
+	"Grønland" N Prop Neu Sg Nom Indef @dep #3->3
 "<eru>"
-	"vera" V Ind Prs Pl @cop #4->6
+	"vera" V Ind Prs Pl @cop #4->4
 "<sjálvstýrandi>"
 	"sjálvstýrandi" A Neu Pl Nom Indef @amod #5->6
 "<lond>"
-	"land" N Neu Pl Nom Indef @root #6->0
+	"land" N Neu Pl Nom Indef @dep #6->6
 "<í>"
-	"í" Pr @case #7->8
+	"í" Pr @case #7->7
 "<danska>"
 	"danskur" A Neu Sg Dat Def @amod #8->9
 "<kongaríkinum>"
-	"kongaríki" N Neu Sg Dat Def @nmod #9->6
+	"kongaríki" N Neu Sg Dat Def @nmod #9->9
 "<.>"
-	"." CLB @punct #10->6
+	"." CLB @punct #10->10
 
 "<Útbúgvingar>"
-	"útbúgving" N Fem Pl Nom Indef @nsubj:cop #1->5
+	"útbúgving" N Fem Pl Nom Indef @dep #1->1
 "<í>"
 	"í" Pr @case #2->3
 "<Danmark>"
-	"Danmark" N Prop Fem Sg Dat Indef @nmod #3->1
+	"Danmark" N Prop Fem Sg Dat Indef @nmod #3->3
 "<eru>"
-	"vera" V Ind Prs Pl @cop #4->5
+	"vera" V Ind Prs Pl @cop #4->4
 "<atkomuligar>"
-	"atkomuligur" A Fem Pl Nom Indef @root #5->0
+	"atkomuligur" A Fem Pl Nom Indef @dep #5->5
 "<fyri>"
-	"fyri" Pr @case #6->8
-"<allar>"
+	"fyri" Pr @case #6->6
+"<allir>"
 	"allur" Det Msc Pl Nom Indef @det #7->8
 "<borgarar>"
-	"borgari" N Msc Pl Nom Indef @nmod #8->5
+	"borgari" N Msc Pl Nom Indef @dep #8->8
 "<í>"
 	"í" Pr @case #9->10
 "<ríkinum>"
-	"ríki" N Neu Sg Dat Def @nmod #10->8
+	"ríki" N Neu Sg Dat Def @nmod #10->10
 "<.>"
-	"." CLB @punct #11->5
+	"." CLB @punct #11->11
 
-## you wanted conj(vøkur, har) and nsubj(er, har), not a conflict?
 "<Oyggin>"
-	"oyggj" N Fem Sg Nom Def @nsubj:cop #1->3
+	"oyggj" N Fem Sg Nom Def @dep #1->1
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #2->3
+	"vera" V Ind Prs Sg3 @cop #2->2
 "<vøkur>"
-	"vøka" N Fem Pl Nom Indef @root #3->0
+	"vøka" N Fem Pl Nom Indef @dep #3->3
 "<og>"
-	"og" CC @cc #4->5
+	"og" CC @cc #4->4
 "<har>"
-	"har" Adv @conj #5->3
+	"har" Adv @dep #5->5
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #6->5
+	"vera" V Ind Prs Sg3 @cop #6->6
 "<nógvur>"
 	"nógvur" A Msc Sg Nom Indef @amod #7->8
 "<heiðafuglur>"
-	"heiðafuglur" N Msc Sg Nom Indef @conj #8->3
+	"heiðafuglur" N Msc Sg Nom Indef @dep #8->8
 "<.>"
-	"." CLB @punct #9->8
+	"." CLB @punct #9->9
 
 "<Í>"
 	"í" Pr @case #1->2
 "<bygdini>"
-	"bygd" N Fem Sg Dat Def @nmod #2->3
+	"bygd" N Fem Sg Dat Def @nmod #2->2
 "<hoyrist>"
 	"hoyra" V Ind Prs Sg3 Pass @root #3->0
 "<songurin>"
-	"songur" N Msc Sg Nom Def @nsubj #4->3
+	"songur" N Msc Sg Nom Def @dep #4->3
 "<frá>"
 	"frá" Pr @case #5->6
 "<heiðafuglinum>"
-	"heiðafuglur" N Msc Sg Dat Def @nmod #6->3
+	"heiðafuglur" N Msc Sg Dat Def @nmod #6->6
 "<sjáldsama>"
-	"sjáldsamur" A Msc Sg Dat Def @advmod #7->8
+	"sjáldsamur" A Msc Sg Dat Def @amod #7->8
 "<væl>"
-	"væl" N Fem Sg Dat Indef @advmod #8->3
+	"væl" N Fem Sg Dat Indef @dep #8->3
 "<.>"
-	"." CLB @punct #9->3
+	"." CLB @punct #9->9
 
 "<Øll>"
 	"allur" Det Fem Sg Nom Indef @det #1->2
 "<vestursíðan>"
-	"vestursíða" N Fem Sg Nom Def @nsubj:cop #2->5
+	"vestursíða" N Fem Sg Nom Def @dep #2->2
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #3->5
+	"vera" V Ind Prs Sg3 @cop #3->3
 "<høgur>"
 	"høgur" A Msc Sg Nom Indef @amod #4->5
 "<bakki>"
-	"bakki" N Msc Sg Nom Indef @root #5->0
+	"bakki" N Msc Sg Nom Indef @dep #5->5
 "<.>"
-	"." CLB @punct #6->5
+	"." CLB @punct #6->6
 
 "<Nógv>"
 	"nógvur" A Neu Pl Nom Indef @amod #1->2
 "<seyðahald>"
-	"seyðahald" N Neu Sg Nom Indef @root #2->0
+	"seyðahald" N Neu Sg Nom Indef @dep #2->2
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #3->2
+	"vera" V Ind Prs Sg3 @cop #3->3
 "<í>"
 	"í" Pr @case #4->5
 "<oynni>"
-	"oy" N Fem Sg Dat Def @nmod #5->2
+	"oy" N Fem Sg Dat Def @nmod #5->5
 "<,>"
-	"," CLB @punct #6->2
+	"," CLB @punct #6->6
 "<og>"
-	"og" CC @cc #7->2
+	"og" CC @cc #7->7
 "<í>"
 	"í" Pr @case #8->9
 "<Mikladals>"
-	"Mikladalur" N Prop Msc Sg Gen Indef @amod #9->10
+	"Mikladalur" N Prop Msc Sg Gen Indef @nmod #9->9
 "<kommunu>"
-	"kommuna" N Fem Sg Dat Indef @nsubj:cop #10->11
+	"kommuna" N Fem Sg Dat Indef @dep #10->10
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #11->10
+	"vera" V Ind Prs Sg3 @cop #11->11
 "<eisini>"
-	"eisini" Adv @advmod #12->11
+	"eisini" Adv @dep #12->12
 "<nógv>"
 	"nógvur" A Neu Pl Acc Indef @amod #13->14
 "<neytahald>"
-	"neytahald" N Neu Sg Acc Indef @dep #14->2
+	"neytahald" N Neu Sg Acc Indef @dep #14->14
 "<.>"
-	"." CLB @punct #15->14
+	"." CLB @punct #15->15
 
 "<Flogskiparin>"
-	"flogskipari" N Msc Sg Nom Def @nsubj #1->5
+	"flogskipari" N Msc Sg Nom Def @dep #1->5
 "<og>"
-	"og" CC @cc #2->1
+	"og" CC @cc #2->2
 "<7>"
 	"7" Num Nom @nummod #3->4
 "<ferðafólk>"
-	"ferðafólk" N Neu Pl Nom Indef @conj #4->1
+	"ferðafólk" N Neu Pl Nom Indef @dep #4->5
 "<doyðu>"
 	"doyða" V Ind Prt Pl @root #5->0
 "<.>"
-	"." CLB @punct #6->5
+	"." CLB @punct #6->6
 
 "<Hetta>"
-	"hesin" Pron Dem Neu Sg Acc @nsubj:cop #1->2
+	"hesin" Pron Dem Neu Sg Acc @dep #1->1
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #2->4
+	"vera" V Ind Prs Sg3 @cop #2->2
 "<eitt>"
 	"ein" Det Neu Sg Nom @det #3->4
 "<tiltak>"
-	"tiltak" N Neu Sg Nom Indef @root #4->0
+	"tiltak" N Neu Sg Nom Indef @dep #4->4
 "<,>"
-	"," CLB @punct #5->4
+	"," CLB @punct #5->5
 "<ið>"
-	"ið" CS @nsubj:cop #6->5
+	"ið" CS @dep #6->6
 "<er>"
-	"vera" V Ind Prs Sg3 @cop #7->8
+	"vera" V Ind Prs Sg3 @cop #7->7
 "<málrættað>"
-	"málrættaður" A Adv @aux #8->4
+	"málrættaður" A Adv @dep #8->8
 "<ferðavinnuni>"
-	"ferðavinna" N Fem Sg Dat Def @nmod #9->4
+	"ferðavinna" N Fem Sg Dat Def @dep #9->9
 "<.>"
-	"." CLB @punct #10->8
+	"." CLB @punct #10->10
 
 "<Í>"
 	"í" Pr @case #1->2
